@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+# mybatis-plus
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+  # 搜索指定包别名
+  typeAliasesPackage: com.muguang.miaosha.entity
+  mapperLocations: classpath*:mapper/**/*Mapper.xml
+
+pagehelper:
+  helper-dialect: mysql
+
+spring:
+  profiles:
+    active: dev
